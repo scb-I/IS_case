@@ -104,7 +104,10 @@ export default function Home() {
                         style={{ width: 'calc(100% - 260px)' }}
                     >
                         <div className='flex justify-center items-center p-[40px] w-full h-full rounded-[30px] bg-[#2B3033]'>
-                            <dialog id='settings_modal' className='modal'>
+                            <dialog
+                                id='settings_modal'
+                                className='modal backdrop-blur'
+                            >
                                 <div className='modal-box p-0 max-w-none max-h-none w-[600px] h-[250px] flex flex-col items-center justify-center space-y-[35px]'>
                                     <div className='w-full px-[50px] h-[60px] flex flex-row justify-center items-center space-x-[30px]'>
                                         <BsCameraVideo
