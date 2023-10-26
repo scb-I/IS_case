@@ -7,7 +7,7 @@ import Map from '../components/map';
 export default function Home() {
     const [showMediaPlayer, setShowMediaPlayer] = useState(true);
     const [currentSrc, setCurrentSrc] = useState(
-        'https://cdn.universmotri.ru/ipcam/cam34.stream_576p/playlist.m3u8'
+        'https://github.com/scb-I/IS_case/blob/Max/nonedetection.mp4'
     ); // Состояние для хранения текущего src
 
     const handleBuildingPlanClick = () => {
@@ -35,7 +35,7 @@ export default function Home() {
                             <button
                                 onClick={() =>
                                     changeSrcClick(
-                                        'https://sochi.camera:8443/cam_311/tracks-v1a1/mono.m3u8?token=188d4afbbc1dc7cff3dfc5232209ef1013857eb6-3d1d928612f6e0d30e3fc06dffdb35f0-1698378622-1698349822'
+                                        'https://github.com/scb-I/IS_case/blob/Max/nonedetection.mp4'
                                     )
                                 }
                                 className='button-cam'
@@ -50,7 +50,7 @@ export default function Home() {
                             <button
                                 onClick={() =>
                                     changeSrcClick(
-                                        'https://cdn.universmotri.ru/ipcam/cam34.stream_576p/playlist.m3u8'
+                                        'https://github.com/scb-I/IS_case/blob/Max/detection.mp4'
                                     )
                                 }
                                 className='button-cam'
