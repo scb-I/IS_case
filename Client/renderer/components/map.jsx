@@ -1,5 +1,6 @@
+import Image from 'next/image';
+import MapImage from '../public/images/map.svg';
+
 export default function Map() {
-    return (
-        <div className='info-container w-[1560px] h-[930px] m-[50px] bg-green-500 rounded-[30px]'></div>
-    );
+    return <Image src={MapImage} alt='Map' width={1560} height={930} />;
 }
