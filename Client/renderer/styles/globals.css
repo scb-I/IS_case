@@ -9,6 +9,9 @@
 @layer base {
     * {
         -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
         @apply p-0 m-0 select-none overflow-hidden;
     }
     body {

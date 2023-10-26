@@ -13,7 +13,7 @@ export default function AuthPage() {
                             Authorization
                         </label>
                         <form>
-                            <div className='flex justify-center flex-col w-auto mt-[60px] h-auto items-center space-y-[35px]'>
+                            <div className='flex justify-center flex-col w-auto p-3 mt-[60px] h-auto items-center space-y-[35px]'>
                                 <input
                                     type='text'
                                     placeholder='Login'

@@ -7,7 +7,7 @@ function Header() {
         <React.Fragment>
             <nav className='drag flex flex-row relative items-center w-full h-[50px] bg-[#3A3F43]'>
                 <div className='flex items-center px-[10px] w-max h-full text-[32px] text-white'>
-                    Team name
+                    DefSet
                 </div>
                 <div className='flex absolute items-center flex-row right-0 w-auto h-full '>
                     <button

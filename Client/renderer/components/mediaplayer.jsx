@@ -6,13 +6,10 @@ import {
     DefaultVideoLayout,
 } from '@vidstack/react/player/layouts/default';
 
-export default function MyMediaPlayer() {
+export default function MyMediaPlayer(props) {
     return (
-        <div className='m-[40px]'>
-            <MediaPlayer
-                title='Sprite Fight'
-                src='https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/low.mp4'
-            >
+        <div className='w-full h-full flex justify-center rounded-[10px] overflow-hidden'>
+            <MediaPlayer src={props.currentSrc} autoplay='true'>
                 <MediaProvider />
                 <DefaultVideoLayout
                     thumbnails='https://image.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/storyboard.vtt'

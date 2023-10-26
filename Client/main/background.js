@@ -58,3 +58,5 @@ ipcMain.on('maximize-win', () => {
         mainWindow.maximize();
     }
 });
+
+ipcMain.on('turn-detector', () => {});
