@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
-import { BsBezier, BsCameraVideo } from 'react-icons/bs';
+import { BsBezier, BsCameraVideo, BsAspectRatio } from 'react-icons/bs';
 import MediaPlayer from '../components/mediaplayer';
 import Map from '../components/map';
 
@@ -79,34 +79,15 @@ export default function Home() {
                             </button>
                         </div>
 
-                        <div
-                            onClick={() =>
-                                document
-                                    .getElementById('settings_modal')
-                                    .showModal()
-                            }
-                            className='absolute flex flex-row bottom-0 px-[25px] pb-[25px] w-full h-auto'
-                        >
-                            <dialog id='settings_modal' className='modal'>
-                                <div className='modal-box'>
-                                    <h3 className='font-bold text-lg'>
-                                        Hello!
-                                    </h3>
-                                    <p className='py-4'>
-                                        Press ESC key or click the button below
-                                        to close
-                                    </p>
-                                    <div className='modal-action'>
-                                        <form method='dialog'>
-                                            {/* if there is a button in form, it will close the modal */}
-                                            <button className='btn'>
-                                                Close
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </dialog>
-                            <button className='flex justify-center items-center w-[125px] h-[40px] rounded-l-[10px] text-white bg-[#5d89c3] hover:bg-[#4e73a3] duration-300'>
+                        <div className='absolute flex flex-row bottom-0 px-[25px] pb-[25px] w-full h-auto'>
+                            <button
+                                onClick={() =>
+                                    document
+                                        .getElementById('settings_modal')
+                                        .showModal()
+                                }
+                                className='flex justify-center items-center w-[125px] h-[40px] rounded-l-[10px] text-white bg-[#5d89c3] hover:bg-[#4e73a3] duration-300'
+                            >
                                 Settings
                             </button>
                             <button
@@ -123,6 +104,32 @@ export default function Home() {
                         style={{ width: 'calc(100% - 260px)' }}
                     >
                         <div className='flex justify-center items-center p-[40px] w-full h-full rounded-[30px] bg-[#2B3033]'>
+                            <dialog id='settings_modal' className='modal'>
+                                <div className='modal-box p-0 max-w-none max-h-none w-[600px] h-[250px] flex flex-col items-center justify-center space-y-[35px]'>
+                                    <div className='w-full px-[50px] h-[60px] flex flex-row justify-center items-center space-x-[30px]'>
+                                        <BsCameraVideo
+                                            size={60}
+                                            className='fill-white'
+                                        />
+                                        <input
+                                            type='text'
+                                            className='input focus:outline-none w-[410px] h-[60px] text-[25px]'
+                                            placeholder='Enter camera name'
+                                        />
+                                    </div>
+                                    <div className='w-full px-[50px] h-[60px] flex flex-row justify-center items-center space-x-[30px]'>
+                                        <BsAspectRatio
+                                            size={60}
+                                            className='fill-white'
+                                        />
+                                        <input
+                                            type='text'
+                                            className='input focus:outline-none w-[410px] h-[60px] text-[25px]'
+                                            placeholder='Enter sector'
+                                        />
+                                    </div>
+                                </div>
+                            </dialog>
                             {showMediaPlayer ? (
                                 <MediaPlayer currentSrc={currentSrc} />
                             ) : (

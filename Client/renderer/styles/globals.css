@@ -33,7 +33,7 @@
         -webkit-app-region: no-drag;
     }
     .button-cam {
-        @apply w-[215px] h-[25px] ml-[30px] my-[10px] mr-[15px] flex flex-row items-center justify-start space-x-[10px] hover:bg-[#3A3F43] duration-300 rounded-md;
+        @apply w-auto h-[25px] ml-[30px] my-[10px] p-[4px] flex flex-row items-center justify-start space-x-[10px] hover:bg-[#3A3F43] duration-300 rounded-md;
     }
     .main-table {
         height: calc(100vh - 53px);
