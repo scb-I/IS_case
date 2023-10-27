@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+@import url('https://db.onlinewebfonts.com/c/a8d23046bc8d38ee78b38e95ec47f9e5?family=Franklin+Gothic+Medium');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        @apply p-0 m-0 select-none overflow-hidden;
+    }
+    body {
+        font-family: 'Sergoe UI', Arial, sans-serif;
+        font-weight: bold;
+    }
+    input:focus,
+    button:focus,
+    textarea:focus {
+        outline: none;
+    }
+}
+
+@layer components {
+    .drag {
+        -webkit-app-region: drag;
+    }
+    .no-drag {
+        -webkit-app-region: no-drag;
+    }
+    .button-cam {
+        @apply w-auto h-[25px] ml-[30px] my-[10px] p-[4px] flex flex-row items-center justify-start space-x-[10px] hover:bg-[#3A3F43] duration-300 rounded-md;
+    }
+    .main-table {
+        height: calc(100vh - 53px);
+        @apply flex flex-col bg-[#3A3F43] w-full;
+    }
+    .input {
+        @apply w-[430px] h-[60px] bg-[#3A3F43] rounded-[15px] text-[25px] text-center text-white placeholder:flex placeholder:text-center;
+    }
+}
