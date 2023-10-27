@@ -36,7 +36,6 @@ function Header() {
                     </button>
                 </div>
             </nav>
-            <div className='w-full h-[3px] bg-[#2B3033]'></div>
         </React.Fragment>
     );
 }

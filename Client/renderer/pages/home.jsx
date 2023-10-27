@@ -98,12 +98,15 @@ export default function Home() {
                             </button>
                         </div>
                     </div>
-
                     <div
-                        className='flex justify-center items-center p-[50px] h-full'
+                        className='w-[3px] bg-[#3A3F43]'
+                        style={{ height: 'calc(100vh - 50px)' }}
+                    ></div>
+                    <div
+                        className='flex justify-center items-center h-full'
                         style={{ width: 'calc(100% - 260px)' }}
                     >
-                        <div className='flex justify-center items-center p-[40px] w-full h-full rounded-[30px] bg-[#2B3033]'>
+                        <div className='flex justify-center items-center p-[40px] w-full h-full bg-[#2B3033]'>
                             <dialog
                                 id='settings_modal'
                                 className='modal backdrop-blur'
